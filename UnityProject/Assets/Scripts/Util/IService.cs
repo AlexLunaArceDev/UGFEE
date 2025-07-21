@@ -1,7 +1,4 @@
-﻿namespace BEGiN.Core
+﻿public interface IService
 {
-    public interface IService
-    {
-        void CleanupService();
-    }
+    void CleanupService();
 }
