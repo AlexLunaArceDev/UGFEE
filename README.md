@@ -6,12 +6,12 @@ This exam is designed to test your abilities in the following areas:
 - Analytics Tracking
 - A/B/C Test Implementation
 
-It should take you approximately 2-4 hours to finish this exam. You may submit your completed exam to us however you see fit (i.e.: Email, project fork).
+It should take you approximately 2-4 hours to finish this exam. You may submit your completed exam to us however you see fit (i.e.: Email, project fork), along with any notes you deem necessary to explain your design decisions.
 
 This project was created with Unity 6000.0.38f1.
 
 ## Instructions
-In `MainScene.unity`, a skeleton UI has been created for you, consisting of a Welcome screen and a "Lead Source" screen (how the user heard about us) which appears after the Welcome screen. 
+In `MainScene.unity`, a skeleton UI has been created for you, consisting of a Welcome screen and a "Lead Source" screen (how the user heard about us) which follows the Welcome screen. 
 
 Your tasks are as follows:
 - Create two new UI Screens
@@ -68,3 +68,5 @@ Such an implementation is described in `Assets/Scripts/Util/IAnalyticsService.cs
   - `ALL ANALYTICS` is purposely defined loosely - it is up to you to track what the user has seen, and how they have interacted with the application!
 - `Flush()`es the data to a "source of truth" for analysis. In a real-world application, analytics would be aggregated to a tool such as MixPanel.
   - `LocalAnalyticsService` can simply print all the analytics you've collected to the console via Debug.Log, once the user clicks "Start Free Trial" on the Free Trial / Paywall UI Screens.
+
+Once you've implemented your `LocalAnalyticsService`, `Bind()` it to the ServiceLocator in `Bootstrapper.cs`. Use it throughout the application to gather analytics as you see fit.
