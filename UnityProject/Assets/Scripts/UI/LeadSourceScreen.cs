@@ -21,11 +21,13 @@ public class LeadSourceScreen : UIScreenBase
 
     public void OnToggleClicked()
     {
-        _activeToggle = _toggleGroup.ActiveToggles().FirstOrDefault();
-        if (_activeToggle)
-        {
-            var toggleText = _activeToggle.GetComponentInChildren<TMP_Text>().text;
-            Debug.Log($"Lead Source is: {toggleText}");
-        }
+        _activeToggle = _toggleGroup
+            .ActiveToggles()
+            .FirstOrDefault();
+
+        if (!_activeToggle) return;
+        
+        var toggleText = _activeToggle.GetComponentInChildren<TMP_Text>().text;
+        Debug.Log($"Lead Source is: {toggleText}");
     }
 }
