@@ -1,17 +1,17 @@
 {
   "VariantA" :
   {
-    "prefabToLoad" : "freetrial"
+    "prefabToLoad" : "FreeTrial"
   },
   "VariantB" :
   {
-    "prefabToLoad" : "paywall",
+    "prefabToLoad" : "Paywall",
     "priceOptionA" : 99.99,
     "priceOptionB" : 12.99
   },
   "VariantC" :
   {
-    "prefabToLoad" : "paywall",
+    "prefabToLoad" : "Paywall",
     "priceOptionA" : 79.99,
     "priceOptionB" : 14.99
   }
