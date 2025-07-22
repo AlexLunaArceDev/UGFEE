@@ -11,17 +11,24 @@ It should take you approximately 2-4 hours to finish this exam. You may submit y
 This project was created with Unity 6000.0.38f1.
 
 ## Instructions
+In `MainScene.unity`, a skeleton UI has been created for you, consisting of a Welcome screen, and a "Lead Source" screen (how the user heard about us) which appears after the Welcome screen. Your tasks are as follows:
+- Create two new UI Screens
+- Set up an A/B/C test which determines:
+  - What screen shows up after the Lead Source screen
+  - What price the user will pay, if they are presented with a Paywall
+- Gather anayltics on how the user interacts with the UI
+
 ### UI Implementation
 #### UI Implementation, Part One
 - In `Assets/UI REFERENCE`, a UI Designer has created a mockup of a Free-Trial UI, with a reference resolution of 480 x 800. Implement this UI in Unity. It should look acceptable in a variety of aspect ratios in a Portrait orientation.
 - SDF Fonts you can use are found in `Assets/Fonts`. Please use TextMeshPro for all Text-based UI
-- Create a Prefab of your completed UI in a new Folder called `Prefabs`
+- Create a Prefab of your completed UI in the `Prefabs` folder.
 
 #### UI Implementation, Part Two
-- In `Assets/UI REFERENCE`, a UI Designer has created a mockup of a Paywall UI, with two price points for two subscription products. Implement this UI in Unity, using the same rules in UI Implementation, Part One.
+- In `Assets/UI REFERENCE`, a UI Designer has created a mockup of a Paywall UI, with a reference resoultion of 480 x 800, with price points for two subscription products. Implement this UI in Unity, using the same rules in UI Implementation, Part One.
 - A user should be able to click on either subscription product, observe that it is selected, and then then click "Start Free Trial" to make their selection.
 - You are not required to implement any payment or storefront features!
-- Create a prefab of your completed UI in `Prefabs`
+- Create a prefab of your completed UI in the `Prefabs` folder.
 
 ## C# Proficiency
 ### A Note on Architecture / Design Patterns Used
