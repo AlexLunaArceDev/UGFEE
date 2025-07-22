@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 34191849}
   - component: {fileID: 34191848}
   m_Layer: 5
-  m_Name: BASE_UI_REFERENCE
+  m_Name: START_FREE_TRIAL_UI_REFERENCE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
