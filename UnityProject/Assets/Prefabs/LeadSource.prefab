@@ -1764,6 +1764,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc71ae8d9a6ba4b28a51e5a62624a256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _toggleGroup: {fileID: 7177991482139576279}
+  _freeTrailUI: {fileID: 7698206910851046161, guid: e3f1844b4baeb044db51476a65e35503, type: 3}
+  _payWallUI: {fileID: 7187779795840710150, guid: bf91186f5fbdbc2469b8a7abd5a326a1, type: 3}
 --- !u!1 &6744431999025748272
 GameObject:
   m_ObjectHideFlags: 0
