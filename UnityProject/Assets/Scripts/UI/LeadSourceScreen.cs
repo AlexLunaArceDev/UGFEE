@@ -61,6 +61,9 @@ public class LeadSourceScreen : UIScreenBase
 
     public void OnToggleClicked()
     {
+        if(_activeToggle == _toggleGroup.ActiveToggles().FirstOrDefault())
+            return;
+
         _activeToggle = _toggleGroup
             .ActiveToggles()
             .FirstOrDefault();
