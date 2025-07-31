@@ -31,7 +31,6 @@ public class Bootstrapper : MonoBehaviour
         else
         {
             AssingNewCohort();
-            Debug.Log($"Assigned new cohort: {AssignedCohort}");
         }
     }
 
@@ -39,7 +38,16 @@ public class Bootstrapper : MonoBehaviour
     private void AssingNewCohort()
     {
         int randomIndex = Random.Range(0, 3);
+        if (PlayerPrefs.HasKey(_cohortKey))
+        {
+            Cohort previousCohort = (Cohort)System.Enum.Parse(typeof(Cohort), PlayerPrefs.GetString(_cohortKey));
+            while((Cohort)randomIndex == previousCohort)
+            {
+                randomIndex = Random.Range(0, 3);
+            }
+        }
         AssignedCohort = (Cohort)randomIndex;
         PlayerPrefs.SetString(_cohortKey, AssignedCohort.ToString());
+        Debug.Log($"Assigned new cohort: {AssignedCohort}");
     }
 }
