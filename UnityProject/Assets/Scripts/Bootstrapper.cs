@@ -19,6 +19,8 @@ public class Bootstrapper : MonoBehaviour
         //Binding the Local ConfigService
         ServiceLocator.Bind<IConfigService>(new LocalConfigService());
 
+        //Binding the Local LocalAnalyticsService
+        ServiceLocator.Bind<IAnalyticsService>(new LocalAnalyticsService()); //Future TODO: integrate Mixpanel creating a Mixpanel Service that use the IAnalyticsService
     }
 
     private void AssignCohort()
