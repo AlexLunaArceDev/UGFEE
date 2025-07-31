@@ -2044,7 +2044,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: -43002865399405198}
         m_TargetAssemblyTypeName: PayWallScreen, Assembly-CSharp
         m_MethodName: Next
         m_Mode: 1
@@ -2617,6 +2617,8 @@ GameObject:
   - component: {fileID: 2800209696354792647}
   - component: {fileID: 1444222433939754151}
   - component: {fileID: 1983320986227082902}
+  - component: {fileID: -3901242432451464564}
+  - component: {fileID: -43002865399405198}
   m_Layer: 5
   m_Name: PaywallScreen
   m_TagString: Untagged
@@ -2684,6 +2686,55 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-3901242432451464564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187779795840710150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578c9ef09feaff34d80fd8f5c2f19e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _options:
+  - button: {fileID: 4124247109437253667}
+    texts:
+    - {fileID: 2148388173182074379}
+    - {fileID: 1730765308861918655}
+    - {fileID: 5844637207206552559}
+    - {fileID: 1902414743101599788}
+    images:
+    - {fileID: 4420369068334261105}
+    - {fileID: 1393242575869811256}
+  - button: {fileID: 8659011156962071215}
+    texts:
+    - {fileID: 286666030855000462}
+    - {fileID: 336938132254423}
+    images: []
+  _defaultBackgroundColor: {r: 0.9607844, g: 0.89019614, b: 0.77647066, a: 1}
+  _defaultTextColor: {r: 0.7686275, g: 0.38823533, b: 0.26666668, a: 1}
+  _defaultImagesColor: {r: 0.77647066, g: 0.4039216, b: 0.2784314, a: 1}
+  _selectedBackgroundColor: {r: 0.40000004, g: 0.5019608, b: 0.41176474, a: 1}
+  _selectedTextColor: {r: 0.9568628, g: 0.8941177, b: 0.7803922, a: 1}
+  _selectedImagesColor: {r: 0.9490197, g: 0.8862746, b: 0.77647066, a: 1}
+--- !u!114 &-43002865399405198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187779795840710150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f893b21625e9d874fa77f52f84236024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nextUI: {fileID: 774655808827421709, guid: 07cda2f0b856f4543863687d90663920, type: 3}
+  _tMPPriceOptionA: {fileID: 1902414743101599788}
+  _tMPPriceOptionB: {fileID: 336938132254423}
+  _optionSelectorMenu: {fileID: -3901242432451464564}
 --- !u!1 &7235488163307862097
 GameObject:
   m_ObjectHideFlags: 0

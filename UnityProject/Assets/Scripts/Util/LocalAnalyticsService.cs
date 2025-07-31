@@ -62,6 +62,7 @@ public class LocalAnalyticsService : IAnalyticsService
         {
             { "type", "analyticsRegister" },
             { "timestamp", DateTime.UtcNow.ToString("MM-dd-yyyy HH:mm:ss") },
+            { "userID", Bootstrapper.UserID },
             { "userCohort", Bootstrapper.AssignedCohort.ToString() }, 
             { "parameters", parameters }
         };

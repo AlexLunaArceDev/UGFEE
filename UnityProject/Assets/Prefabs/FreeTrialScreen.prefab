@@ -1908,7 +1908,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: -4572344092555324391}
         m_TargetAssemblyTypeName: SuscriptionScreen, Assembly-CSharp
         m_MethodName: Next
         m_Mode: 1
@@ -2006,6 +2006,7 @@ GameObject:
   - component: {fileID: 3997249134826694251}
   - component: {fileID: 3365714740855721517}
   - component: {fileID: 549944454334026608}
+  - component: {fileID: -4572344092555324391}
   m_Layer: 5
   m_Name: FreeTrialScreen
   m_TagString: Untagged
@@ -2073,6 +2074,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-4572344092555324391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698206910851046161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee769f6c2304d544fabfc36fdd182392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nextUI: {fileID: 774655808827421709, guid: 07cda2f0b856f4543863687d90663920, type: 3}
 --- !u!1 &7779434900627119267
 GameObject:
   m_ObjectHideFlags: 0
